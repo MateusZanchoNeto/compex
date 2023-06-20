@@ -1,6 +1,6 @@
-# SG Sistemas extensao para o visual studio code para o desenvolvimento com Harbour e xHarbour
-
-Suporte apenas para Windows no momento.
+# Compex
+> SG Sistemas - extensao para o visual studio code para o desenvolvimento com Harbour e xHarbour
+suporte apenas para Windows no momento.
 
 ## Funcoes
 
