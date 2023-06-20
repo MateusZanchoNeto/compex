@@ -1,0 +1,179 @@
+{
+  "name": "compex",
+  "displayName": "Compex",
+  "description": "Compex - Harbour Compiler Extension",
+  "publisher": "MateusZanchoNeto",
+  "contributors": [
+    {
+      "name": "Salatiel M. O."
+    }
+  ],
+  "icon": "images/compex.png",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Compex - Settings",
+      "properties": {
+        "compex.scp": {
+          "type": "array",
+          "default": [
+            {
+              "name": "",
+              "serverIP": "",
+              "serverDirectory": "",
+              "user": "",
+              "password": ""
+            }
+          ],
+          "description": "SCP Settings",
+          "items": {
+            "type": "object",
+            "title": "SCP Settings",
+            "properties": {
+              "user": {
+                "type": "string",
+                "default": "",
+                "description": "SCP User"
+              },
+              "password": {
+                "type": "string",
+                "default": "",
+                "description": "SCP Password"
+              },
+              "serverIP": {
+                "type": "string",
+                "default": "",
+                "description": "Server IP"
+              },
+              "serverDirectory": {
+                "type": "string",
+                "default": "",
+                "description": "Server Directory"
+              }
+            }
+          }
+        },
+        "compex.options.noExport": {
+          "type": "boolean",
+          "default": false,
+          "description": "No Export Branches"
+        },
+        "compex.options.noUpdate": {
+          "type": "boolean",
+          "default": false,
+          "description": "No Update Branches"
+        },
+        "compex.options.automatic": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatic response to prompts"
+        },
+        "compex.options.batch": {
+          "type": "boolean",
+          "default": false,
+          "description": "Disable prompts"
+        },
+        "compex.options.executableName": {
+          "type": "boolean",
+          "default": false,
+          "description": "Input executable name"
+        },
+        "compex.options.version": {
+          "type": "boolean",
+          "default": false,
+          "description": "Input version"
+        },
+        "compex.options.rebuild": {
+          "type": "boolean",
+          "default": false,
+          "description": "Rebuild Compilation"
+        },
+        "compex.options.quiet": {
+          "type": "boolean",
+          "default": false,
+          "description": "Quiet Compilation"
+        },
+        "compex.options.sqlrdd": {
+          "type": "boolean",
+          "default": false,
+          "description": "SQLRDD Compilation"
+        },
+        "compex.options.xharbour": {
+          "type": "boolean",
+          "default": false,
+          "description": "XHARBOUR Compilation"
+        },
+        "compex.options.fivewin": {
+          "type": "boolean",
+          "default": false,
+          "description": "FIVEWIN Compilation"
+        },
+        "compex.options.harbourArm": {
+          "type": "boolean",
+          "default": false,
+          "description": "HARBOUR ARM Compilation"
+        },
+        "compex.options.harbourx86": {
+          "type": "boolean",
+          "default": false,
+          "description": "HARBOUR X86 Compilation"
+        },
+        "compex.options.harbourx64": {
+          "type": "boolean",
+          "default": false,
+          "description": "HARBOUR X64 Compilation"
+        },
+        "compex.options.trunk2": {
+          "type": "boolean",
+          "default": false,
+          "description": "Trunk folder without changes"
+        },
+        "compex.options.lcp": {
+          "type": "string",
+          "default": "",
+          "description": "Copy to local folder"
+        },
+        "compex.options.ezexport": {
+          "type": "boolean",
+          "default": false,
+          "description": "Easy Export only changed files"
+        },
+        "compex.options.ftp": {
+          "type": "boolean",
+          "default": false,
+          "description": "Easy Export only changed files"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "compex.compilation",
+        "title": "Compex: Compilation"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.78.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "20.2.5",
+    "eslint": "^8.41.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.3",
+    "@vscode/test-electron": "^2.3.2"
+  }
+}
