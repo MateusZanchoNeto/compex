@@ -94,6 +94,16 @@ async function compex(context) {
         selectedOptions[i] = selectedOptions[i].trim();
       }
 
+      if (selectedOptions[i] === '-run') {
+
+        userInput = await getInputText('Command Line Params', 'command line params', '');
+
+        if (!userInput) return;
+        
+        selectedOptions[i] = '-run ' + userInput.replace(/\s+/g, "\\\\");
+        selectedOptions[i] = selectedOptions[i].trim();
+      }
+
     }
   }
 

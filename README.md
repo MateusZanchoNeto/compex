@@ -1,6 +1,5 @@
 # Compex
 > SG Sistemas - extensao para o visual studio code para o desenvolvimento com Harbour e xHarbour
-suporte apenas para Windows no momento.
 
 ## Funcoes
 
@@ -11,9 +10,10 @@ suporte apenas para Windows no momento.
 - Compilacao de projetos Fivewin, Harbour e xHarbour.
 - Definicao do nome do executavel.
 - Copia do executavel via ftp ou scp.
+- Executa o programa compilado.
 
 ## Configuracoes da extensao.
- A extensao tem as seguintes configuracoes:
+A extensao tem as seguintes configuracoes:
 
 * `SCP - User | Password | Server IP | Server Directory`
 * `Options - No Export      `
@@ -34,6 +34,7 @@ suporte apenas para Windows no momento.
 * `Options - LCP            `
 * `Options - EZEXPORT       `
 * `Options - FTP            `
+* `Options - RUN            `
 
 ## Credits
 

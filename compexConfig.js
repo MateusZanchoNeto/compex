@@ -119,6 +119,10 @@ function compexConfigurationValues() {
       ftp: {
         value: configuration.get("compex.options.ftp"),
         param: '-ftp'
+      },
+      run: {
+        value: configuration.get("compex.options.run"),
+        param: '-run'
       }
     }
   };

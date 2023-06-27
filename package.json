@@ -149,7 +149,12 @@
         "compex.options.ftp": {
           "type": "boolean",
           "default": false,
-          "description": "Easy Export only changed files"
+          "description": "Export to FTP"
+        },
+        "compex.options.run": {
+          "type": "boolean",
+          "default": false,
+          "description": "Run after compilation"
         }
       }
     },
