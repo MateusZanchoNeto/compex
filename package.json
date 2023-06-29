@@ -65,6 +65,32 @@
             }
           }
         },
+        "compex.userCommandsList": {
+          "type": "array",
+          "default": [
+            {
+              "name": "",
+              "command": ""
+            }
+          ],
+          "description": "User Commands",
+          "items": {
+            "type": "object",
+            "title": "User Commands",
+            "properties": {
+              "name": {
+                "type": "string",
+                "default": "",
+                "description": "Command name"
+              },
+              "command": {
+                "type": "string",
+                "default": "",
+                "description": "Command"
+              }
+            }
+          }
+        },
         "compex.options.noExport": {
           "type": "boolean",
           "default": false,
@@ -166,6 +192,10 @@
       {
         "command": "compex.compilation",
         "title": "Compex: Compilation"
+      },
+      {
+        "command": "compex.userCommands",
+        "title": "Compex: User Commands"
       }
     ]
   },

@@ -11,6 +11,7 @@
 - Definicao do nome do executavel.
 - Copia do executavel via ftp ou scp.
 - Executa o programa compilado.
+- Lista de comandos do usuario.
 
 ## Configuracoes da extensao.
 A extensao tem as seguintes configuracoes:
