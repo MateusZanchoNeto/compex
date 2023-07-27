@@ -100,7 +100,7 @@ async function compex(context) {
 
         if (!userInput) return;
         
-        selectedOptions[i] = '-run ' + userInput.replace(/\s+/g, "\\\\");
+        selectedOptions[i] = '-run ' + userInput.replace(/\s+/g, "\\");
         selectedOptions[i] = selectedOptions[i].trim();
       }
 

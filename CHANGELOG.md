@@ -2,6 +2,10 @@
 
 All notable changes to the "compex" extension will be documented in this file.
 
+## [0.2.1]
+
+- Fixed run bar
+
 ## [0.2.0]
 
 - Added user commands list
