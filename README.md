@@ -36,6 +36,7 @@ A extensao tem as seguintes configuracoes:
 * `Options - EZEXPORT       `
 * `Options - FTP            `
 * `Options - RUN            `
+* `Options - Kill           `
 
 ## Credits
 

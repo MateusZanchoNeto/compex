@@ -2,6 +2,11 @@
 
 All notable changes to the "compex" extension will be documented in this file.
 
+## [0.3.0]
+
+- Added kill
+- Modified run
+
 ## [0.2.1]
 
 - Fixed run bar

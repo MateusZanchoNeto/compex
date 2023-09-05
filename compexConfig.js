@@ -123,6 +123,10 @@ function compexConfigurationValues() {
       run: {
         value: configuration.get("compex.options.run"),
         param: '-run'
+      },
+      kill: {
+        value: configuration.get("compex.options.kill"),
+        param: '-kill'
       }
     }
   };

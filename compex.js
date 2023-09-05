@@ -26,7 +26,6 @@ async function compex(context) {
     }
 
     if (recompile === 'List Commands') {
-      console.log(lastCommands);
       const recompileCommand = await selectCommandRecompile(lastCommands);
       if (!recompileCommand) return;
 
@@ -98,10 +97,11 @@ async function compex(context) {
 
         userInput = await getInputText('Command Line Params', 'command line params', '');
 
-        if (!userInput) return;
+        if (userInput) {
+          selectedOptions[i] = '-run ' + userInput.replace(/\s+/g, "\\");
+          selectedOptions[i] = selectedOptions[i].trim();
+        };
         
-        selectedOptions[i] = '-run ' + userInput.replace(/\s+/g, "\\");
-        selectedOptions[i] = selectedOptions[i].trim();
       }
 
     }

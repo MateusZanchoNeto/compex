@@ -185,6 +185,11 @@
           "type": "boolean",
           "default": false,
           "description": "Run after compilation"
+        },
+        "compex.options.kill": {
+          "type": "boolean",
+          "default": false,
+          "description": "Kill before run"
         }
       }
     },
